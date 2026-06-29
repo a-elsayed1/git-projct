@@ -1,4 +1,4 @@
-name: Docker Build
+name: Docker CI
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Source
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Build Docker Image
